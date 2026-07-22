@@ -83,6 +83,11 @@ p{
     color:#888;
     font-size:14px;
 }
+.Nemiroff{
+    margin-top:25px;
+    color:#8888886c;
+    font-size:14px;
+}
 
 @media(max-width:500px){
     h1{
