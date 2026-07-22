@@ -73,7 +73,26 @@ p{
     box-shadow:0 0 20px rgba(0,212,255,.6);
 }
 
+.btn2{
+    display:inline-block;
+    margin-top: 8px;
+    padding:10px 35px;
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    border-radius:15px;
+    background:linear-gradient(90deg,#cc00ff,#ff0022);
+    transition:.3s;
+    box-shadow:0 0 20px rgba(0,212,255,.6);
+}
+
 .btn:hover{
+    transform:translateY(-5px) scale(1.05);
+    box-shadow:0 0 35px rgba(0,212,255,1);
+}
+
+.btn2:hover{
     transform:translateY(-5px) scale(1.05);
     box-shadow:0 0 35px rgba(0,212,255,1);
 }
@@ -88,7 +107,92 @@ p{
     color:#8888886c;
     font-size:14px;
     font-family: 'Gerbera';
-    src: url('http://yoursite.com/gerbera/Gerbera-Bold.woff') format('woff');
+src: url('http://yoursite.com/gerbera/Gerbera-Bold.woff') format('woff');
+}
+/* Боковая панель */
+.sidebar{
+    position:fixed;
+    left:20px;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:100;
+}
+
+.toggle{
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:#00d4ff;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 0 20px rgba(0,212,255,.6);
+}
+
+.toggle:hover{
+    transform:scale(1.1);
+}
+
+.menu{
+    position:absolute;
+    left:-280px;
+    top:-15px;
+    width:250px;
+    padding:20px;
+    border-radius:18px;
+    background:rgba(20,20,20,.9);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.1);
+    transition:.4s;
+    box-shadow:0 0 25px rgba(0,212,255,.4);
+}
+
+.menu.open{
+    left:70px;
+}
+
+.menu h3{
+    color:#fff;
+    margin-bottom:12px;
+}
+
+.menu a{
+    color:#00d4ff;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    
+    user-select:none;
+    transition:0.3s;
+    text-shadow:0 0 8px rgba(255,255,255,0.2);
+}
+
+.menu a:hover{
+    text-shadow:0 0 12px #00d4ff;
+}
+
+.version{
+    margin-top:20px;
+    color:#bfbfbf;
+    font-size:15px;
+    cursor:default;
+    text-shadow:0 0 12px #09fa29,
+                 0 0 24px #bb13eed3;
+}
+
+.hidden-version{
+    color:transparent;
+    user-select:none;
+    transition:0.3s;
+    text-shadow:0 0 8px rgba(255,255,255,0.2);
+}
+
+.version:hover .hidden-version{
+    color:#00d4ff;
+    text-shadow:0 0 12px #00d4ff,
+                 0 0 24px #00d4ff;
 }
 
 @media(max-width:500px){
