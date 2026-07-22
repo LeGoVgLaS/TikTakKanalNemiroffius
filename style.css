@@ -398,3 +398,111 @@ src: url('http://yoursite.com/gerbera/Gerbera-Bold.woff') format('woff');
         width:200px;
     }
 }
+
+@media (max-width: 280px){
+
+    .notice{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .notice-icon{
+        margin-bottom:5px;
+    }
+
+    .notice-text h3{
+        font-size:18px;
+    }
+
+    .card{
+        padding:20px 15px;
+    }
+
+    .logo{
+        font-size:48px;
+    }
+
+    h1{
+        font-size:24px;
+    }
+
+    .btn{
+        font-size:16px;
+    }
+
+    .menu{
+        width:200px;
+    }
+}
+
+@media (max-width: 160px){
+
+    .notice{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .notice-icon{
+        margin-bottom:5px;
+    }
+
+    .notice-text h3{
+        font-size:18px;
+    }
+
+    .card{
+        padding:20px 15px;
+    }
+
+    .logo{
+        font-size:48px;
+    }
+
+    h1{
+        font-size:24px;
+    }
+
+    .btn{
+        font-size:16px;
+    }
+
+    .menu{
+        width:200px;
+    }
+}
+
+@media (max-width: 50px){
+
+    .notice{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .notice-icon{
+        margin-bottom:5px;
+    }
+
+    .notice-text h3{
+        font-size:18px;
+    }
+
+    .card{
+        padding:20px 15px;
+    }
+
+    .logo{
+        font-size:48px;
+    }
+
+    h1{
+        font-size:24px;
+    }
+
+    .btn{
+        font-size:16px;
+    }
+
+    .menu{
+        width:200px;
+    }
+}
