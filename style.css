@@ -87,6 +87,8 @@ p{
     margin-top:25px;
     color:#8888886c;
     font-size:14px;
+    font-family: 'Gerbera';
+    src: url('http://yoursite.com/gerbera/Gerbera-Bold.woff') format('woff');
 }
 
 @media(max-width:500px){
