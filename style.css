@@ -71,6 +71,18 @@ p{
     background:linear-gradient(90deg,#00d4ff,#0099ff);
     transition:.3s;
     box-shadow:0 0 20px rgba(0,212,255,.6);
+     background:linear-gradient(
+        135deg,
+        #48ff00,
+        #00eee2,
+        #001aff,
+        #ff00aa
+    );
+    background-size:300% 300%;
+    animation:gradientMove 8s ease infinite;
+
+    backdrop-filter:blur(15px);
+
 }
 
 .btn2{
@@ -145,23 +157,58 @@ src: url('http://yoursite.com/gerbera/Gerbera-Bold.woff') format('woff');
     z-index:2;
 }
 .notice{
+    position:relative;
+    overflow:hidden;
+
     width:min(700px,100%);
     min-height:120px;
     padding:20px;
+
     display:flex;
     align-items:center;
     gap:16px;
 
-    background:rgba(20,20,20,.75);
+    background:linear-gradient(
+        135deg,
+        #00d4ff,
+        #6a00ff,
+        #ff00b3,
+        #00d4ff
+    );
+    background-size:300% 300%;
+    animation:gradientMove 8s ease infinite;
+
     backdrop-filter:blur(15px);
 
-    border:1px solid rgba(0,212,255,.4);
+    border:1px solid rgba(255,255,255,.15);
     border-left:4px solid #00e676;
 
     border-radius:18px;
 
-    box-shadow:0 0 20px rgba(0,212,255,.15);
+    box-shadow:
+        0 0 20px rgba(0,212,255,.25),
+        inset 0 0 10px rgba(255,255,255,.08);
+
     transition:.3s;
+}
+
+.notice:hover{
+    transform:translateY(-5px) scale(1.02);
+    box-shadow:
+        0 0 35px rgba(0,212,255,.6),
+        0 0 60px rgba(106,0,255,.3);
+}
+
+@keyframes gradientMove{
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0% 50%;
+    }
 }
 .notice:hover{
     transform:translateY(-5px) scale(1.05);
